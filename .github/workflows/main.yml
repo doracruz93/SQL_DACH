@@ -1,0 +1,21 @@
+name:Checkmarx AST Scan
+on:
+ push:
+   -main
+   -master
+   -dev
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   -name:Checkout
+   uses:actions/checkout@v2
+   -name: Checkmarx AST CLI Action
+    uses: checkmarxDev/ast-github-action@master #Github Action version
+    with:
+      project_name:<Name of CxAST Project>
+      cx_tenant:nfr_trustdimension #<CxAST Tenant Account>
+      base_uri:https://ast.checkmarx.net #<CxAST Base uri>
+      cx_client_id:${{secrets.CX_CLIENT_ID}}
+      cx_client_secret: ${{secrets.CX_CLIENT_SECRET}}
+      scan_types:sast,kics,sca
