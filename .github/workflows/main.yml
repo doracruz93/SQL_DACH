@@ -1,9 +1,10 @@
 name:Checkmarx AST Scan
-on:
+on: 
  push:
-   -main
-   -master
-   -dev
+  branches:
+     - main
+     - master
+     - dev
 jobs:
  build:
   runs-on: ubuntu-latest
