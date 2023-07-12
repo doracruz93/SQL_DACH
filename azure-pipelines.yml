@@ -17,8 +17,8 @@ steps:
 - task: Checkmarx AST@2
   inputs:
     CheckmarxService: 'CxSAST'
-    projectName: '$(Build.Repository.Name)'
-    branchName: '$(Build.SourceBranchName)'
+    projectName: '$(Build.Repository.testing2)'
+    branchName: '$(Build.SourceBranchtesting2)'
     tenantName: 'nfr_trustdimension'
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
