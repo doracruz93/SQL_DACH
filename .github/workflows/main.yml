@@ -19,3 +19,6 @@ jobs:
       cx_client_secret: ${{secrets.CX_CLIENT_SECRET}}
       scan_types: sast,kics,sca
       branch: ${{ github.ref }}
+      additional-params:
+      --project-tags [Ofi1TD]
+      
