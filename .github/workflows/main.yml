@@ -20,7 +20,7 @@ jobs:
       scan_types: sast,kics,sca
       branch: ${{ github.ref }}
       additional_params:
-       --project-tags [TD_1]
+       --project-tags [TD_a]
       
       
       
