@@ -19,8 +19,8 @@ jobs:
       cx_client_secret: ${{secrets.CX_CLIENT_SECRET}}
       scan_types: sast,kics,sca
       branch: ${{ github.ref }}
-      additional_params:
-       --project-tags [TD_a]
+      #additional_params:
+       #--project-tags [TD_a]
       
       
       
