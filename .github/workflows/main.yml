@@ -21,7 +21,7 @@ jobs:
       branch: ${{ github.ref }}
       additional_params:
        --project-tags 
-              TD_a1, tagB: TD2
+              TD_a1, tagB
       #hola
       
       
